@@ -18,11 +18,15 @@
 gradient.addColorStop("0","#48C9B0");
 gradient.addColorStop("1.0","#29B6F6");
       
-      // Test
+      // Background
       ctx.fillStyle = gradient;
       ctx.beginPath();
       ctx.rect(0,0,c.width,c.height/2); 
       ctx.fill();
+      // Media
+      ctx.textAlign="center";
+      ctx.font = "30px Calibri";
+      ctx.fillText("Hello World",c.width,(c.height/2)-30);
       
     </script>
   </body>
