@@ -18,17 +18,27 @@
 gradient.addColorStop("0","#48C9B0");
 gradient.addColorStop("1.0","#29B6F6");
       
-      // Background
-      ctx.fillStyle = gradient;
-      ctx.beginPath();
-      ctx.rect(0,0,c.width,c.height/3); 
-      ctx.fill();
-      // Media
-      ctx.fillStyle = "#fff";
-      ctx.textAlign="center";
-      ctx.font = "bolder 60px Calibri";
-      ctx.fillText("MediaSave",c.width/2,(c.height/6)+30);
-      
+      function home() {
+        ctx.clearRect(0, 0, c.width, c.height);
+        // Background
+        ctx.fillStyle = gradient;
+        ctx.beginPath();
+        ctx.rect(0,0,c.width,c.height/3); 
+        ctx.fill();
+        // Media
+        ctx.fillStyle = "#fff";
+        ctx.textAlign="center";
+        ctx.font = "bolder 60px Calibri";
+        ctx.fillText("MediaSave",c.width/2,(c.height/6)+30);
+        // Load
+        ctx.beginPath();
+        ctx.arc(c.width/2,c.height/1.5,50,0*Math.PI,1.5*Math.PI) 
+        ctx.fill();
+        ctx.fillStyle = "#fff";
+        ctx.beginPath();
+        ctx.arc(c.width/2,c.height/1.5,40,0,2*Math.PI);
+        ctx.fill();
+      }
     </script>
   </body>
 </html>
