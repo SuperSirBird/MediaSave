@@ -31,14 +31,11 @@ gradient.addColorStop("1.0","#29B6F6");
         ctx.font = "bolder 60px Calibri";
         ctx.fillText("MediaSave",c.width/2,(c.height/6)+30);
         // Load
-        ctx.fillStyle = gradient;
+        ctx.strokeStyle = gradient;
+        ctx.lineWidth=10;
         ctx.beginPath();
         ctx.arc(c.width/2,c.height/1.5,50,0*Math.PI,1.5*Math.PI) 
-        ctx.fill();
-        ctx.fillStyle = "#fff";
-        ctx.beginPath();
-        ctx.arc(c.width/2,c.height/1.5,40,0,2*Math.PI);
-        ctx.fill();
+        ctx.stroke();
       }
       
       // Mainloop
