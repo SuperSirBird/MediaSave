@@ -36,10 +36,11 @@ gradient.addColorStop("1.0","#29B6F6");
         ctx.beginPath();
         ctx.arc(c.width/2,c.height/1.5,40,0*Math.PI,1.5*Math.PI) 
         ctx.stroke();
+        window.requestAnimationFrame(home());
       }
       
       // Mainloop
-      home();
+      window.requestAnimationFrame(home());
     </script>
   </body>
 </html>
