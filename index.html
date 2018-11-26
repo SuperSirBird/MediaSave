@@ -8,6 +8,7 @@
   <body>
     <canvas id="myCanvas"></canvas>
     <script>
+      var t = 0;
       var c=document.getElementById("myCanvas");
       // Set dimensions
       c.width  = window.innerWidth;
@@ -39,7 +40,7 @@ gradient.addColorStop("1.0","#29B6F6");
       }
       
       // Mainloop
-      setInterval(function(){ home(0) }, 10);
+      setInterval(function(){ home(0); t+=0.1 }, 10);
     </script>
   </body>
 </html>
