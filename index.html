@@ -52,28 +52,6 @@ gradient.addColorStop("1.0","#29B6F6");
       // Mainloop
       setInterval(function(){home();vel+=0.1;t+=(1+Math.sin(vel))/30; }, 10);
       
-      /*
-      IP CONNECT TO SERVER
-      */
-      
-      // Load timout
-      setTimeout(function(){ isloading=false; }, 6000);
-      var exampleSocket = new WebSocket('wss://localhost:9494', ['soap', 'xmpp']);
-
-      // When the connection is open, send some data to the server
-      exampleSocket.onopen = function () {
-        exampleSocket.send('05'); 
-      };
-
-      // Log errors
-      exampleSocket.onerror = function (error) {
-        console.log('WebSocket Error ' + error);
-      };
-
-      // Log messages from the server
-      exampleSocket.onmessage = function (e) {
-        console.log('Server: ' + e.data);
-      };
     </script>
   </body>
 </html>
