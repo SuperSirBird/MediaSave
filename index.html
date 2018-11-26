@@ -19,7 +19,7 @@
 gradient.addColorStop("0","#48C9B0");
 gradient.addColorStop("1.0","#29B6F6");
       
-      function home(t) {
+      function home() {
         ctx.clearRect(0, 0, c.width, c.height);
         // Background
         ctx.fillStyle = gradient;
@@ -40,7 +40,7 @@ gradient.addColorStop("1.0","#29B6F6");
       }
       
       // Mainloop
-      setInterval(function(){ home(0); t+=0.1 }, 10);
+      setInterval(function(){ home(); t+=0.1 }, 10);
     </script>
   </body>
 </html>
