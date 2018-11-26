@@ -8,6 +8,7 @@
   <body>
     <canvas id="myCanvas"></canvas>
     <script>
+      var count = 0;
       var t = 0;
       var c=document.getElementById("myCanvas");
       // Set dimensions
@@ -40,7 +41,7 @@ gradient.addColorStop("1.0","#29B6F6");
       }
       
       // Mainloop
-      setInterval(function(){ home(); t+=0.02 }, 10);
+      setInterval(function(){ home(); count+=1;t+=sin(count) }, 10);
     </script>
   </body>
 </html>
